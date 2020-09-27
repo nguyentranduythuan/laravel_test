@@ -7,6 +7,9 @@
 	<link rel="stylesheet" href="">
 </head>
 <body>
-	<div>{{ $body }}</div>
+	<div>{{ $bodyHomePage }}</div>
+	<div>@foreach ($listSoChan as $soChan)
+		{!! $soChan . '<br>' !!}
+	@endforeach</div>
 </body>
 </html>
